@@ -1,0 +1,23 @@
+profile-view {
+    .profile_avatar_div{
+        margin:0;
+        display: block;
+        // background: #00A4D1;
+    }
+    .profile_avatar{
+        margin:0 auto;
+        display: block;
+        height: 200px;
+        width: 200px;
+        
+    }
+    .profile_avatar >img{
+        border-radius: 50% !important;
+    }
+    .profile-card{
+        border-radius: 3%;
+    }
+    .profile-view-wrapper > *{
+        opacity: 0.95!important;
+    }
+}

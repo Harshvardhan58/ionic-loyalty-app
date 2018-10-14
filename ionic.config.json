@@ -1,5 +1,7 @@
 {
   "name": "Capgemini",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

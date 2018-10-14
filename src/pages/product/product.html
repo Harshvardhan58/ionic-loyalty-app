@@ -1,0 +1,34 @@
+<!--
+  Generated template for the ProductPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-title *ngIf="product">{{product?.name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="navigateToCart()" >
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding *ngIf="product">
+<div class="profile_avatar_div" >
+  <ion-avatar class="profile_avatar" >
+    <img style="height:200px;" [src]="product?.picture"/>
+  </ion-avatar>
+</div>
+<div>
+   <h3>Detail</h3>
+   <p  >{{product?.detail}}</p>
+   <h4  ><ion-icon name="ios-home" color="dark"></ion-icon> {{product?.productd.name}}</h4>
+   <h4 > <ion-icon name="ios-pricetag" color="dark"></ion-icon> &#8377; {{product?.price}}</h4>
+</div>  
+<button ion-button color="secondary" block (click)="addToCart()" >Add to Cart</button>
+</ion-content>

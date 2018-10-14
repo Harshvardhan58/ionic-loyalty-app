@@ -1,0 +1,22 @@
+page-product {
+    .profile_avatar_div{
+        margin:5%;
+        display: block;
+        // background: #00A4D1;
+    }
+    .profile_avatar{
+        margin:0 auto;
+        display: block;
+        height: 200px;
+        width: 200px;
+        
+    }
+    .scroll-content {
+        background: url('../assets/imgs/background.png');
+    
+      }
+      .scroll-content >*{
+        opacity: 0.95!important;
+    
+      }
+}

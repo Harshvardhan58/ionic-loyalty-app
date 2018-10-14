@@ -1,0 +1,23 @@
+login-form {
+    .login_from_buttons{
+        padding: 10px;
+        float: right;
+        div button:nth-of-type(1){
+            margin-right: 10px;
+        }
+    }
+    .login-card{
+        border-radius:3% !important;
+    }
+    .form_input_error{
+        color: #f53d3d;
+    }
+    .input-icon{
+        float:right;
+    }
+    ion-card-header{
+        text-align: center;
+        color:#635dff !important;
+        font-size: 1.8em !important;
+    }
+}

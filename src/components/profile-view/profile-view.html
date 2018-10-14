@@ -1,0 +1,30 @@
+<div class="profile-view-wrapper">
+<div class="profile_avatar_div" >
+  <ion-avatar class="profile_avatar" >
+    <img src="assets/imgs/profile_avatar.png" alt="dp"/>
+  </ion-avatar>
+</div>
+<div class="profile-card">
+<ion-card *ngIf="this.profile" >
+    <ion-card-content>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input [value]="profile.email" [readonly]="true" ></ion-input>
+        </ion-item>
+      <ion-item>
+        <ion-label floating>Name</ion-label>
+        <ion-input [value]="profile.name" [readonly]="true" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Card Number</ion-label>
+        <ion-input [value]="profile.card" [readonly]="true" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Balance</ion-label>
+        <ion-input [value]="profile.balance" [readonly]="true"></ion-input>
+      </ion-item>
+    </ion-card-content>
+</ion-card>
+</div>
+<button ion-button color="danger" block (click)="signOut()" >Logout</button>
+</div>
